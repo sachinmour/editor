@@ -1,6 +1,5 @@
-# NYC Outward Bound 
+# Editor
 
 ###Description###
 
-An open source data management tracking system originally built for NYC outward bound
-to allow them to track their leavers.
+An open source editor built on top of draft.js
