@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import Dashboard from './DashBoard';
+import Editor from './Editor';
+import RichEditor from './RichEditor';
+
+require('../../public/style/main2.scss');
 
 export default class App extends Component {
-  render() {
-    let currentPage;
-    if (this.props.children) {
-      currentPage = React.cloneElement(this.props.children, ...this.props);
-    }
 
-    return (
-      <Dashboard currentPage={ currentPage } />
-      );
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+
+		};
+	}
+
+	render() {
+		return (
+			<div>
+				<RichEditor />
+			</div>
+		);
+	}
 }

@@ -6,13 +6,6 @@ import { Router, Route, IndexRoute } from 'react-router';
 
 // components
 import App from './components/app';
-import DashboardMain from './components/pages/DashboardMain';
-import Upload from './components/pages/Upload';
-import Schools from './components/pages/Schools';
-import Students from './components/pages/Students';
-import SingleStudent from './components/pages/SingleStudent';
-import SingleCollege from './components/pages/SingleCollege';
-import Colleges from './components/pages/Colleges';
 
 // redux store
 import store, { history } from './store';
@@ -21,13 +14,6 @@ ReactDOM.render(
   <Provider store={ store }>
     <Router history={ history }>
       <Route path='/' component={ App }>
-        <IndexRoute component={ DashboardMain } />
-        <Route path='upload' component={ Upload } />
-        <Route path='schools' component={ Schools } />
-        <Route path='students' component={ Students } />
-        <Route path='colleges' component={ Colleges } />
-        <Route path='student/:contactID' component={ SingleStudent } />
-        <Route path='college/:fullName' component={ SingleCollege } />
       </Route>
     </Router>
   </Provider>
